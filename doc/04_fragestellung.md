@@ -1,6 +1,7 @@
-# hslu-bdlc-project
+# Fragestellung an den Datensatz
 
-Project for the HSLU BDLC Module
+(mindestens zwei Fragen)
+Welche Fragen möchten Sie durch die Daten beantworten?
 
 ## Table of Contents
 

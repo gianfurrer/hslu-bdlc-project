@@ -1,7 +1,5 @@
 # Analysis
 
-Erweitern Sie nun den Prototype mit allen Daten.
-Beantworten Sie Ihre gestellten Fragen mit Hilfe von queries, charts.
-Zeigen Sie Ihre Resultate und Ergebnisse
-Machen Sie eine Plausibilitätskontrolle.
-Gibt es durch die Beantwortung der Fragen neue Fragestellungen?
+Die Dokumentationen der Analyse ist direkt in den Jupyter Lab Dateien in [03_analysis](./../03_analysis) zu finden.
+
+Dabei sind die einzelnen Schritte erklaert und die erstellten Outputs werden interpretiert. In jedem File gibt es am Ende ein Fazit, das die jeweilige Frage beantwortet basierend auf der durchgefuehrten Analyse.

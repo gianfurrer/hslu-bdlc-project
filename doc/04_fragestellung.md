@@ -26,13 +26,13 @@ Dazu wird die Differenz zwischen der Durchschnittspitstopzeit von Ferrari und de
 
 In diesem Bereich möchten wir die Sicherheit im Formel-1-Sport untersuchen und dabei auffällige Muster bei Fahrern und Teams im Zusammenhang mit Unfällen identifizieren. Dazu wurden drei zentrale Fragestellungen formuliert:
 
-**Hat sich die Sicherheit im Laufe der Zeit verbessert?**<br> 
+**Hat sich die Sicherheit im Laufe der Zeit verbessert?** \
 Die Häufigkeit von Unfällen soll über die Jahre untersucht und Trends sollen interpretiert werden.
 
-**Welche Fahrer hatten die meisten Unfälle?**<br> 
+**Welche Fahrer hatten die meisten Unfälle?** \ 
 Es soll untersucht werden, ob sich bestimmte Fahrer durch eine auffällig hohe Anzahl von Unfällen hervorheben.
 
-**Welche Teams hatten die meisten Unfälle?**<br>
+**Welche Teams hatten die meisten Unfälle?** \
 Auch auf Teamebene wird analysiert, ob es Konstrukteure gibt, bei denen besonders häufig Unfälle auftreten.
 
 ## Geschwindigkeit
@@ -47,13 +47,3 @@ Dazu werden verschiedene Strecken die schon lange im Rennkalender sind analysier
 Dazu werden verschiedene Strecken die schon lange im Rennkalender sind analysiert und der mediale Zeitunterschied gemessen.
 
 
-## Table of Contents
-
-- [Abstract](doc/01_abstract.md)
-- [Cluster](doc/02_cluster.md)
-- [Dataset](doc/03_dataset.md)
-- [Fragestellung](doc/04_fragestellung.md)
-- [Prototyping](doc/05_prototyping.md)
-- [Data Flow](doc/06_dataflow.md)
-- [Analysis](doc/07_analysis.md)
-- [Learnings](doc/08_learnings.md)

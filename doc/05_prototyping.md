@@ -58,9 +58,9 @@ Wetter: TODO GIAN
 - Redundanz: z.B position als mehrere datentypen: z.B results: position (string), positionText (string), posiitonOrder (integer)
 - Problem mit pit times
 
-#### Spezifische Überraschungen
+#### Domainspezifische Überraschungen
 
-Wie viele Fahrer in fruehen Seasons gefahren sind: max Position in driver Standings = 108
+Wie viele Fahrer in fruehen Seasons gefahren sind: max Position in driver Standings = 108, allgemein, wie sehr sich f1 geaendert hat ueber die jahre
 
 ## Learnings aus dem Prototyping
 

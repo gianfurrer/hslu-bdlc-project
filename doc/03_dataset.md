@@ -9,6 +9,8 @@ TODO GIAN _Wie haben Sie die Daten ins HDFS geladen? Musste die Blocksize von HD
 
 Das Projekt ist kein Big-Data Problem, da es sich um wenig Daten handelt (~20MB). Was Big Data auszeichnet, ist, dass die normalen Algorithmen, die fuer kleinere Datenmengen funktionieren, nicht mehr funktionieren aufgrund der Groesse des Datensets. Dies ist hier nicht der Fall. Das Projekt wird jedoch so durchgefuehrt, als ob es sich um ein Big Data Problem handeln wuerde: Die Rechenleistung wird verteilt auf mehrere Maschinen und verteilt genutzt mit PySpark.
 
+## Dataset Dateien
+
 Jede CSV Datei hat einen Primary Key und die Dateien referenzieren sich gegenseitig ueber Foreign Keys. Dies ist ein Ueberblick ueber die Dateien:
 - curcuits.csv: Alle Strecken, die in Formel 1 je befahren wurden, und wo sie sich befinden.
 - constructor_results.csv: Punkte, die ein Team in einem Rennen erhalten hat.
@@ -24,6 +26,7 @@ Jede CSV Datei hat einen Primary Key und die Dateien referenzieren sich gegensei
 - seasons.csv: Alle Saisons von Formel 1, enthaelt lediglich das Jahr und eine URL zu der Wikipedia Seite der Saison.
 - sprint_results.csv: Alle Resultate pro Sprint-Rennen pro Fahrer.
 - status.csv: Status, die ein Fahrer erreichen kann in einem Rennen (e.g. Finished, Accident, Disqualified, ...)
+
 
 Die nachfolgende Liste zeigt eine detaillierte Auslistung von allen einzelnen CSV Dateien, mit allen Feldern, Datentypen und falls noetig einer Beschreibung des Feldes.
 

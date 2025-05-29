@@ -5,11 +5,13 @@ Es wurde ein Formel 1 Datenset gewaehlt, dass als CSV von Kaggle heruntergeladen
 Das Datenset besteht aus mehreren CSV Dateien, die wie in einer Datenbank mit Fremdschluesseln aufeinander verweisen.
 Es wurde gewaehlt, da es sehr umfangreiche Daten ueber Formel 1 enthaelt ueber die unterschiedlichen Teile des Sportes. Beispielsweise gibt es nicht nur Informationen zu den Rennen, sondern auch zu den Pitstops. Ebenfalls gibt es Daten ueber eine lange Zeitspanne (1950-2024), was noetig ist, fuer die gewaehlten Fragestellungen, da diese alle eine Entwicklung ueber Zeit untersuchen wollen.
 
+Zusaetzlich wurde auch ein Wetter Datenset verwendet. Dies besteht lediglich aus einer CSV Datei. Diese enthaelt das Jahr und die Rennrunde, da es ein Wetterdatenset spezifisch fuer die Formel 1 ist. So kann es mit dem Formel 1 Dataset verknuepft werden. TODO GIAN where did you get it from
+
 TODO GIAN _Wie haben Sie die Daten ins HDFS geladen? Musste die Blocksize von HDF angepasst werden?_
 
 Das Projekt ist kein Big-Data Problem, da es sich um wenig Daten handelt (~20MB). Was Big Data auszeichnet, ist, dass die normalen Algorithmen, die fuer kleinere Datenmengen funktionieren, nicht mehr funktionieren aufgrund der Groesse des Datensets. Dies ist hier nicht der Fall. Das Projekt wird jedoch so durchgefuehrt, als ob es sich um ein Big Data Problem handeln wuerde: Die Rechenleistung wird verteilt auf mehrere Maschinen und verteilt genutzt mit PySpark.
 
-## Dataset Dateien
+## F1 Dataset
 
 Jede CSV Datei hat einen Primary Key und die Dateien referenzieren sich gegenseitig ueber Foreign Keys. Dies ist ein Ueberblick ueber die Dateien:
 - curcuits.csv: Alle Strecken, die in Formel 1 je befahren wurden, und wo sie sich befinden.
@@ -183,3 +185,21 @@ _Note: Alle 'points' sind floats, da halbe Punkte verteilt werden koennen in sel
 **status:**
 - statusId: PK
 - status: String
+
+## Wetter Dataset
+
+- TODO GIAN please corrector what i did wrong
+
+Die folgenden Kolonnen existieren im orignialen Wetter Datenset:
+
+**weather**:
+- Time: String
+- AirTemp: Float (Temperatur in der Luft)
+- Humidity: Float
+- Pressure: Float
+- Rainfall: Boolean
+- TrackTemp: Float (Temperatur der Rennstrecke)
+- WindDirection: Integer
+- WindSpeed: Float
+- Round Number: Integer (Rennrunde, in der gemessen wurde)
+- Year: Integer

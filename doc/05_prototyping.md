@@ -4,6 +4,7 @@ Das Prototyping ist in diesem Kapitel zusammengefasst.
 Die effektiv unternommenen Schritte sind in den Dateien [01_collect_data.ipynb](./../01_collect_data.ipynb) und [02_EDA_data_cleansing.ipynb](./../02_EDA_data_cleansing.ipynb) 
 ersichtlich und dokumentiert.
 
+Das Prototyping wird von Anfang an mit allen Daten durchgeführt aufgrund der geringen Datenmenge. Handelte es sich um ein richtiges Big Data Projekt, würde zu Beginn erst ein Teil der Daten untersucht werden und das Prototyping würde erst nach einem initialen Prototyping auf alle Daten ausgeweitet werden.
 
 ## Erster Kontakt mit den Daten
 

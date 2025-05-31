@@ -1,6 +1,6 @@
 # hslu-bdlc-project
 
-Project for the HSLU BDLC Module
+Project for the HSLU BDLC Module.
 
 ## Table of Contents
 

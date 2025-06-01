@@ -2,6 +2,11 @@
 
 Project for the HSLU BDLC Module. The whole project is running on the VM 4. The paths match the location of the files on that VM but the data is additionally also in the data/ directory in this project.
 
+This project was made by:
+- Alina Meyer
+- Gian Furrer
+- Mario Infang
+
 ## Table of Contents
 
 - [Abstract](doc/01_abstract.md)

@@ -2,7 +2,7 @@
 
 Die folgende Grafik zeigt die Cluster-Topologie als Bild. Es ist ersichtlich wie die Server heissen, welche Services auf welcher Maschine laufen und wie die Ressourcen aufgeteilt sind.
 
-![Ressourcen Autfeilung](assets/aufteilung-ressouren.png)
+![Ressourcen Autfeilung](./assets/aufteilung-ressourcen.png)
 
 Die Daten, die gewählt wurden, sind nicht gross. Es handelt sich also nicht um Big Data.
 Das Ziel dieses Projektes ist es jedoch zu lernen, wie mit Big Data umgegangen werden soll. Deshalb wurden die Topologie und die Frameworks und Tools so gewählt, dass sie für Big Data passend wären. Ebenfalls wurde sich für Apache Spark entschieden, da diese Technologie relevant und zeitgemäss ist.

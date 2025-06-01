@@ -1,6 +1,6 @@
 # Analysis
 
-Die Dokumentationen der Analyse ist direkt in den Jupyter Lab Dateien in [03_analysis](./../03_analysis) zu finden.
+Die Dokumentationen der Analyse ist direkt in den Jupyter Lab Dateien in [03_analysis](./../03_Analysis/03_analysis) zu finden.
 
 Dabei sind die einzelnen Schritte erklärt und die erstellten Outputs werden interpretiert. In jedem File gibt es ein Fazit, das die jeweilige Frage beantwortet basierend auf der durchgeführten Analyse. Bei den einzelnen Interpretationen wird immer transparent hinterfragt, inwiefern die Resultate plausibel sind und welche Erklärungen für die Resultate infrage kommen könnten.
 

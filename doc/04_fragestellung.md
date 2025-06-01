@@ -3,8 +3,8 @@
 Die folgenden drei Fragen sollen durch die Daten beantwortet werden.
 
 - Wie hat sich die Performance von Ferrari über die Jahre entwickelt?
-- Wie hat sich die Sicherheit in Formel 1 über die Jahre entiwckelt?
-- Wie hat sich die Geschwindigkeit der Autos über die Jahre veraendert?
+- Wie hat sich die Sicherheit in Formel 1 über die Jahre entwickelt?
+- Wie hat sich die Geschwindigkeit der Autos über die Jahre verändert?
 
 ## Ferrari Performance
 

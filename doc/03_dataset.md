@@ -5,11 +5,17 @@ Es wurde ein Formel 1 Datenset gewählt, das als CSV von Kaggle heruntergeladen 
 Das Datenset besteht aus mehreren CSV Dateien, die wie in einer Datenbank mit Fremdschlüsseln aufeinander verweisen.
 Es wurde gewählt, da es sehr umfangreiche Daten über Formel 1 enthält über die unterschiedlichen Aspekte des Sportes. Beispielsweise gibt es nicht nur Informationen zu den Rennen, sondern auch zu den Pitstops. Die Daten sind üeber eine lange Zeitspanne (1950-2024), was nötig ist, für die gewählten Fragestellungen, da diese die Entwicklung des Sportes über Zeit untersuchen wollen.
 
-Zusätzlich wurde auch ein Wetter Datenset verwendet. Dies besteht lediglich aus einer CSV Datei und wurde ebenfalls von Kaggle herundergeladen: https://www.kaggle.com/datasets/quantumkaze/f1-weather-dataset-2018-2023.
+Zusätzlich wurde auch ein Wetter Datenset verwendet. Dies besteht lediglich aus einer CSV Datei und wurde ebenfalls von Kaggle heruntergeladen: https://www.kaggle.com/datasets/quantumkaze/f1-weather-dataset-2018-2023.
 
 Diese Datei enthält neben den Wetterdaten das Jahr und die Rennrunde, da es ein Wetterdatenset spezifisch für die Formel 1 ist. Mit der Rennrunde und dem Jahr kann es mit dem Formel 1 Dataset verknüpft werden, da dieses Datenset zu dem ersten Datenset passt wurde es gewählt. 
 
-TODO GIAN _Wie haben Sie die Daten ins HDFS geladen? Musste die Blocksize von HDF angepasst werden?_
+Die Daten wurden ins HDFS geladen mit dem folgenden Command. Die Blocksize musste nicht angepasst werden.
+
+```bash
+hdfs dfs -Ddfs.replication=1 -put -f /data/dataset_cluster/f1/*.csv /f1/raw/
+
+```
+Die Daten werden nur mit einer Kopie pro Block gespeichert. Sie werden an die Destination im HDFS kopiert und falls es bereits Dateien mit dem selben Namen gibt, werden diese überschrieben. Dies ist möglich, da die Daten statisch sind und nur einmalig extrahiert und kopiert werden.
 
 Das Projekt ist kein Big-Data Problem, da es sich um wenig Daten handelt (~20MB). Was Big Data auszeichnet, ist, dass die normalen Algorithmen, die für kleinere Datenmengen funktionieren, nicht mehr funktionieren aufgrund der Grösse des Datensets. Dies ist hier nicht der Fall. Das Projekt wird jedoch so durchgeführt, als ob es sich um ein Big Data Problem handeln würde: Die Rechenleistung wird verteilt auf mehrere Maschinen und verteilt genutzt mit PySpark.
 
@@ -190,8 +196,6 @@ _Note: Alle 'points' sind floats, da halbe Punkte verteilt werden können in sel
 - status: String
 
 ## Wetter Dataset - Schema
-
-- TODO GIAN please corrector what i did wrong
 
 Die folgenden Kolonnen existieren im orignialen Wetter Datenset. Es gibt weder Primary Keys, noch Foreign Keys.
 

@@ -20,7 +20,7 @@ su - cluster
 echo "spark.cores.max 4" >> spark/conf/spark-defaults.conf
 ```
 
-Wären die Daten in der Dimension von Big Data, könnte dies nicht so gelöst werden. In diesem Fall könnte wahrschienlich jeweils nur eine Session gleichzeitg laufen und das Team müsste koordinieren, wie damit umgegangen werden soll.
+Wären die Daten in der Dimension von Big Data, könnte dies nicht so gelöst werden. In diesem Fall könnte wahrscheinlich jeweils nur eine Session gleichzeitg laufen und das Team müsste koordinieren, wie damit umgegangen werden soll.
 
 ## Services Überprüfen
 

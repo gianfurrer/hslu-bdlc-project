@@ -33,7 +33,7 @@ Die folgenden Datensets wurden nicht weiter untersucht, da sie nicht benötigt w
 ## Pre-processing Schritte
 
 Die meisten Dateien waren bereits in einem sehr guten Zustand. Es wurden die Spalten gelöscht, die nicht benötigt werden für die Analyse und gegebenfalls wurden auch welche umbenannt.
-Die aufgeräumten Datein wurden dann als neues Parquet File mit dem Suffix 'cleaned' gespeichert. Falls weitere Schritte durchgefürht wurden, ist dies in der Datei 02 ersichtlich.
+Die aufgeräumten Datein wurden dann als neues Parquet File mit dem Prefix 'cleaned' gespeichert. Falls weitere Schritte durchgefürht wurden, ist dies in der Datei 02 ersichtlich.
 Dies wurde wieder mit der Overwrite Funktion gemacht, da die Daten nicht dynamisch sind und auch nur relativ wenige pre-processing Schritte nötig waren. In einem 'real life' Projekt, wären sie nicht overwritten, sondern versioniert gespeichert worden.
 
 Für die Datei der Pitstops mussten noch mehr pre-processing Schritte unternommen werden, da es hier einige Fehler gab:

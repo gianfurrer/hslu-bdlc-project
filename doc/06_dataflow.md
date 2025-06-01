@@ -11,7 +11,7 @@ Alles befindet sich in dem `/f1/raw` Ordner und in dem `data/` Ordner in diesem 
 Alls CSV Daten werden zu einem Parquet transformiert im Overwrite Modus, da die Daten statisch sind und werden im `/f1/data/` Ordner gespeichert.
 
 Diese Parquet Dateien werden in dem EDA Skript geladen, einzeln untersucht und gegebenfalls angepasst.
-Falls die Daten für die Analyse benötigt werden, werden sie als neue Parquet Files gespeichert mit dem 'cleaned' Suffix.
+Falls die Daten für die Analyse benötigt werden, werden sie als neue Parquet Files gespeichert mit dem 'cleaned' Prefix.
 Dies geschieht ebenfalls wieder in dem Overwrite Modus und im `/f1/data/` Ordner. In einem 'real life' Projekt, würden diese Dateien versioniert und nicht einfach überschrieben werden.
 Das Pre-Processing hat als Ziel, dass nur die benötigten Daten gespeichert werden müssen, die Daten wenn nötig korrigiert werden und als Parquet gespeichert werden, um Speicher zu sparen und das Laden zu beschleunigen. Diese Dateien befinden sich ebenfalls im `data/` Ordner in diesem Repository.
 

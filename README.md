@@ -1,6 +1,6 @@
 # hslu-bdlc-project
 
-Project for the HSLU BDLC Module.
+Project for the HSLU BDLC Module. The whole project is running on the VM 4. The paths match the location of the files on that VM but the data is additionally also in the data/ directory in this project.
 
 ## Table of Contents
 
